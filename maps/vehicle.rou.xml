@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+    <vType id="IDM" carFollowModel="IDM" stepping="1" laneChangeModel="SL2015" tau="1.0" accel="2.0" decel="4.0" length="5.0" width="1.8" minGap="2.0" maxSpeed="45.0" lcAccelLat="20000.0"/>
+    <vType id="IDM_CAV" carFollowModel="IDM" stepping="1" laneChangeModel="SL2015" tau="1.0" accel="2.0" decel="4.0" length="5.0" width="1.8" minGap="2.0" maxSpeed="45.0" lcAccelLat="20000.0"/>
+    <route edges="0to1" color="yellow" id="route_0"/>
+</routes>

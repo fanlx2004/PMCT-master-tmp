@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <input>
+        <net-file value="road.net.xml"/>
+        <route-files value="vehicle.rou.xml"/>
+    </input>
+
+</configuration>
