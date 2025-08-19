@@ -39,7 +39,7 @@ PMCT-master/
 ## Installation and configuration
 ### Clone this repository
 ```bash
-git clone ???
+git clone https://github.com/fanlx2004/PMCT-master-tmp
 ```
 ### Create a new virtual environment (Optional)
 To ensure high flexibility, it is recommended to use a virtual environment when running this repository. To set up the virtual environment, please follow the commands provided below:
