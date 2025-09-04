@@ -1,10 +1,10 @@
-# A Provable Safety Metric for Autonomous Driving via PAC-Verified Deep Reinforcement Learning
+# A Provable Safety Metric for Autonomous Driving via Deep Reinforcement Learning and PAC Verification
 
 <!-- ABOUT THE PROJECT -->
 # Introduction of the Project
 
 ## About
-This project contains the source code and data for the paper titled "A Provable Safety Metric for Autonomous Driving via PAC-Verified Deep Reinforcement Learning". We propose a real-time automonous driving safety metric called Provable Minimum Collision Time (PMCT) that provably predict the minimum time to collision from the inputed initial state. 
+This project contains the source code and data for the paper titled "A Provable Safety Metric for Autonomous Driving via Deep Reinforcement Learning and PAC Verification". We propose a real-time automonous driving safety metric called Provable Minimum Collision Time (PMCT) that provably predict the minimum time to collision from the inputed initial state. 
 
 ## Code Structure
 

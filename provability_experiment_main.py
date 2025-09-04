@@ -114,7 +114,7 @@ for i, neg in enumerate(negative_counts):
 threshold_percent = round(min(conf.epsilons) * 100)
 
 if threshold_lines:
-    threshold_lines[0].set_label(f'Failure Rate Threshold ({threshold_percent}%)')
+    threshold_lines[0].set_label(f'Misclassification Rate Threshold ({threshold_percent}%)')
 
 max_height = max([p + n * scale_factor for p, n in zip(positive_counts, negative_counts)])
 plt.ylim(0, max_height * 1.1)
@@ -126,38 +126,38 @@ plt.legend(fontsize=23)
 plt.tight_layout()
 plt.savefig(figure_dir + 'true_and_predicted_values', dpi=300)
 
-# Draw the line chart of the failure rate by predicted time
+# Draw the line chart of the misclassification rate by predicted time
 
 plt.figure(figsize=(11, 9))
 
-failure_rates = []
+misclassification_rates = []
 for i in range(len(bins)):
     total = positive_counts[i] + negative_counts[i]
     if total > 0:
-        failure_rate = (negative_counts[i] / total) * 100
+        misclassification_rate = (negative_counts[i] / total) * 100
     else:
-        failure_rate = 0
-    failure_rates.append(failure_rate)
+        misclassification_rate = 0
+    misclassification_rates.append(misclassification_rate)
 
-plt.plot(bins, failure_rates, 'bo-', linewidth=2.5, markersize=9, label='Failure Rate')
+plt.plot(bins, misclassification_rates, 'bo-', linewidth=2.5, markersize=9, label='Misclassification Rate')
 
 plt.hlines(y=threshold_percent, xmin=0.0, xmax=5.0, 
            colors='r', linestyles='--', linewidth=2.5, 
-           label=f'Failure Rate Threshold ({threshold_percent}%)')
+           label=f'Misclassification Rate Threshold ({threshold_percent}%)')
 
-for i, rate in enumerate(failure_rates):
+for i, rate in enumerate(misclassification_rates):
     plt.text(bins[i], rate + 0.1, f'{rate:.2f}%', 
              ha='center', va='bottom', fontsize=20)
 
 plt.xticks(bins, bin_labels, fontsize=22)
 plt.yticks(fontsize=22)
 plt.xlabel('Predicted Value of Collision Time (s)', fontsize=22)
-plt.ylabel('Failure Rate (%)', fontsize=22)
+plt.ylabel('Misclassification Rate (%)', fontsize=22)
 plt.legend(loc='center right', fontsize=23)
 plt.ylim(-0.2, 5.2)
 plt.tight_layout()
 
-plt.savefig(figure_dir + 'failure_rate_by_predicted_time.png', dpi=300)
+plt.savefig(figure_dir + 'misclassification_rate_by_predicted_time.png', dpi=300)
 
 
 # calculate the probability of true collision time ≥ predicted value to verify the provability
