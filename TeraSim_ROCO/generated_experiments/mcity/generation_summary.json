@@ -1,0 +1,24 @@
+{
+  "status": "success",
+  "center_coordinates": [
+    42.31708742783425,
+    -83.70771003426997
+  ],
+  "bbox_size": 500,
+  "generated_files": {
+    "osm": "generated_experiments/mcity/map.osm",
+    "sumo_network": "generated_experiments/mcity/map.net.xml",
+    "opendrive": "generated_experiments/mcity/map.xodr",
+    "lanelet2": "generated_experiments/mcity/map.lanelet2.osm",
+    "traffic": {
+      "traffic_medium": {
+        "route_files": {
+          "routes": "['generated_experiments/mcity/vehicles.rou.xml']",
+          "trips": "generated_experiments/mcity/trips_medium.trips.xml",
+          "config": "generated_experiments/mcity/simulationmedium.sumocfg"
+        },
+        "config_file": null
+      }
+    }
+  }
+}

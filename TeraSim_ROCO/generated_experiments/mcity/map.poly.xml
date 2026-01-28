@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-12-17 14:53:52 by Eclipse SUMO polyconvert Version 1.23.1
+<polyconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/polyconvertConfiguration.xsd">
+
+    <input>
+        <net-file value="generated_experiments/mcity/map.net.xml"/>
+        <osm-files value="generated_experiments/mcity/map.osm"/>
+        <osm.keep-full-type value="true"/>
+    </input>
+
+    <output>
+        <output-file value="generated_experiments/mcity/map.poly.xml"/>
+    </output>
+
+    <report>
+        <verbose value="false"/>
+    </report>
+
+</polyconvertConfiguration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <location netOffset="-276333.00,-4687961.92" convBoundary="0.00,-0.00,1089.59,1084.62" origBoundary="-83.714143,42.311812,-83.700891,42.321657" projParameter="+proj=utm +zone=17 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+</additional>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-12-17 13:48:34 by Eclipse SUMO GUI Version 1.23.1
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/lingxiang/TeraSim/generated_experiments/ann_arbor_roundabout/map.net.xml"/>
+        <route-files value="/home/lingxiang/TeraSim/generated_experiments/ann_arbor_roundabout/vehicles.rou.xml"/>
+    </input>
+
+    <output>
+        <collision-output value="generated_experiments/ann_arbor_roundabout/test/raw_data/0_0/collision.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="0.1"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0.5"/>
+        <collision.action value="warn"/>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="0"/>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+        <log value="generated_experiments/ann_arbor_roundabout/test/raw_data/0_0/run.log"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <bluelight_device>
+        <device.bluelight.explicit value="true"/>
+   -->
+
+<collisions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/collision_file.xsd">
+</collisions>

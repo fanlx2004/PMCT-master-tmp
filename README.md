@@ -98,7 +98,7 @@ The experiment results is saved in `./result/provability_experiment_data`, and t
 
 ### Usage 2.2 (Experiments on safety metrics performance comparison)
 
-We compare the performance in real-time safety assessment between the proposed PMCT and other two safety metrics PET and MPrISM through scenario simulations. The functions to calculate PET and MPrISM is in `./safety_metric_tool/PET_solver.py` and `./safety_metric_tool/MPrISM_solver.py`
+We compare the performance in real-time safety assessment between the proposed PMCT and other two safety metrics PET and MPrISM through scenario simulations. The functions to calculate PET and MPrISM are in `./safety_metric_tool/PET_solver.py` and `./safety_metric_tool/MPrISM_solver.py`
 
 Run the following command to repeat the experiment and draw the ROC and PR curves:
 ```bash
@@ -124,6 +124,15 @@ python collision_risk_experiment_main.py
 The results are saved in `./result/collision_risk_result`.
 
 This command also conducts validation of the derived system collision risk upper bound by statistically computed ground-truth collision risk. If you want to re-generate the transition metrix or re-generate the ground-truth collision risk data, set the boolean varibles to `True` in Line 21 or Line 23 of `collision_risk_experiment_main.py`, respectively.
+
+
+## Usage 4 (further experiments on TeraSim and ROCO)
+
+To get access to our latest experiments of applying PMCT on other simulator  and real-world dataset, please run :
+```bash
+cd TeraSim_ROCO
+```
+and see `TeraSim_ROCO/README.md` for further usage.
 
 # Developers
 
